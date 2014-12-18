@@ -1,3 +1,5 @@
+## This function stores a cached copy of the inverse of matrix which is input into the function
+
 makeCacheMatrix <- function(x = matrix()) {      # input x will be a matrix
     
     inv <- NULL    #  inv is the inverse and it is reset to NULL each time that makeCacheMatrix is called
@@ -18,6 +20,8 @@ makeCacheMatrix <- function(x = matrix()) {      # input x will be a matrix
         getInverse = getInverse)  #   function knows how to access those methods
 }
 
+## This function checks to see if a pre-existing inverted of the inputted matrix exists
+## If so, it retrieves a cached version, if not, it creates an inverse of the matrix
 
 cacheSolve <- function(x, ...) {    # The input x is an object created by makeCacheMatrix
     inv <- x$getInverse()           # it accesses the object 'x' and inverts it if the inverse was not already cached
