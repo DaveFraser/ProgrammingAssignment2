@@ -1,4 +1,4 @@
-## This function stores a cached copy of the inverse of matrix which is input into the function
+## This function stores a cached copy of the inverse of matrix which is input into the function 
 
 makeCacheMatrix <- function(x = matrix()) {      # input x will be a matrix
     
